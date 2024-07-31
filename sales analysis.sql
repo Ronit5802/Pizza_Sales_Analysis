@@ -16,9 +16,6 @@ join Pizzas as pz
 on pz.pizza_type_id = pt.pizza_type_id
 order by price desc limit 1;
 
--- Identify the most common pizza size ordered.
-
-
 -- List the top 5 most ordered pizza types along with their quantities.
 select sum(od.quantity) as total, pt.name
 from pizza_types as pt  
